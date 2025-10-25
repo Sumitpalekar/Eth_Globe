@@ -1,4 +1,4 @@
-// app/page.js - FINAL VERSION
+// app/page.js 
 'use client';
 import Link from 'next/link';
 import { useWeb3 } from "../contexts/Web3Context";
