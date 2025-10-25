@@ -1,4 +1,4 @@
-// app/verification/page.js - UPDATED WITH MINT REDIRECTION
+// app/verification/page.js 
 'use client';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
