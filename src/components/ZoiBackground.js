@@ -25,15 +25,15 @@ export default function ZoiBackground() {
 
     window.addEventListener('mousemove', handleMouseMove);
 
-    // Color palette with black, white, and your blues
+    
     const colors = [
-      [10, 26, 42],     // #0A1A2A - Deep navy
-      [16, 47, 68],     // #102F44 - Dark cyan-blue
-      [28, 66, 92],     // #1C425C - Muted teal-blue
-      [46, 86, 116],    // #2E5674 - Cool steel blue
-      [60, 106, 138],   // #3C6A8A - Mid-blue highlight
-      [5, 15, 25],      // #050F19 - Black touch
-      [240, 240, 245, 0.1]  // White touch - very subtle
+      [10, 26, 42],     
+      [16, 47, 68],     
+      [28, 66, 92],    
+      [46, 86, 116],    
+      [60, 106, 138],   
+      [5, 15, 25],      
+      [240, 240, 245, 0.1]  
     ];
 
     // Current target colors for smooth transitions
@@ -104,14 +104,14 @@ export default function ZoiBackground() {
       const mouseX = mouseRef.current.x || canvas.width / 2;
       const mouseY = mouseRef.current.y || canvas.height / 2;
 
-      // Main mouse-following gradient - VERY SMALL circle
+      // Main mouse-following gradient 
       const gradient1 = ctx.createRadialGradient(
-        mouseX + Math.sin(time) * 10, // Smaller movement
+        mouseX + Math.sin(time) * 10, 
         mouseY + Math.cos(time * 0.9) * 8,
         0,
         mouseX,
         mouseY,
-        Math.max(canvas.width, canvas.height) * 0.12 // Much smaller radius
+        Math.max(canvas.width, canvas.height) * 0.12 
       );
 
       gradient1.addColorStop(0, `rgba(${mainColor.slice(0, 3).join(',')}, 0.3)`);
@@ -129,7 +129,7 @@ export default function ZoiBackground() {
         0,
         mouseX,
         mouseY,
-        Math.max(canvas.width, canvas.height) * 0.08 // Very small white circle
+        Math.max(canvas.width, canvas.height) * 0.08 
       );
 
       whiteGradient.addColorStop(0, `rgba(${whiteColor[0]}, ${whiteColor[1]}, ${whiteColor[2]}, ${whiteColor[3] || 0.05})`);
@@ -177,7 +177,6 @@ export default function ZoiBackground() {
 
     animate();
 
-    // Cleanup
     return () => {
       cancelAnimationFrame(animationFrameId);
       window.removeEventListener('resize', resizeCanvas);
