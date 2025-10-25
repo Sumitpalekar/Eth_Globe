@@ -1,4 +1,4 @@
-// components/ui/Navigation.js - UPDATED
+// components/ui/Navigation.js 
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
