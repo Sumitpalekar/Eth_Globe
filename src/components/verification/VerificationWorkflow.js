@@ -1,4 +1,4 @@
-// components/verification/VerificationWorkflow.js - Minimal version
+// components/verification/VerificationWorkflow.js 
 'use client';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
