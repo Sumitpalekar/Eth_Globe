@@ -1,4 +1,4 @@
-// app/layout.js - UPDATED WITH LOADING ANIMATION
+// app/layout.js - 
 'use client';
 import { useState, useEffect } from 'react';
 import './globals.css';
