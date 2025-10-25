@@ -150,7 +150,7 @@ export default function GreenCreditsPage() {
           {GREEN_CREDIT_TYPES.map((card) => (
             <motion.div
               key={card.id}
-              className="relative w-full h-80 cursor-pointer" // Vertical: full width, fixed height
+              className="relative w-full h-80 cursor-pointer" 
               onClick={() => handleCardClick(card.id)}
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
